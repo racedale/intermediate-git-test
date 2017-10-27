@@ -1,0 +1,19 @@
+{
+  "name": "intermediate-git",
+  "version": "1.0.0",
+  "description": "Example repo for intermediate git presentation",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/racedale/intermediate-git.git"
+  },
+  "author": "Dale Race",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/racedale/intermediate-git/issues"
+  },
+  "homepage": "https://github.com/racedale/intermediate-git#readme"
+}
