@@ -4,7 +4,8 @@
   "description": "Example repo for intermediate git presentation",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/racedale/intermediate-git/issues"
   },
-  "homepage": "https://github.com/racedale/intermediate-git#readme"
+  "homepage": "https://github.com/racedale/intermediate-git#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-git": "^2.4.2",
+    "gulp-inject": "^4.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
 }
