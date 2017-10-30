@@ -14,7 +14,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/intermediate-git
+    working_directory: ~/tmp/intermediate-git
 
     steps:
       - checkout
@@ -39,13 +39,13 @@ jobs:
   deploy-job:
        docker:
          - image: circleci/node:6.11
-       working_directory: /tmp/intermediate-git
+       working_directory: ~/tmp/intermediate-git
        steps:
          - run:
              name: Deploy Master to Firebase
              command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
 workflows:
-      version: 1
+      version: 2
       build-deploy:
         jobs:
           - build-job
