@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/racedale/intermediate-git#readme",
   "devDependencies": {
     "del": "^3.0.0",
+    "firebase-tools": "^3.13.1",
     "gulp": "^3.9.1",
     "gulp-git": "^2.4.2",
     "gulp-inject": "^4.3.0",
