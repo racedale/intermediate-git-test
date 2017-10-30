@@ -6,9 +6,13 @@ var inject = require('gulp-inject');
 var rename = require('gulp-rename');
 
 var gitHash;
-git.revParse({args:'--short HEAD'}, function (err, hash) {
-    console.log('current git hash: ' + hash);
-    gitHash = hash;
+
+gulp.task('git-hash', function(done) {
+    return git.revParse({args:'--short HEAD'}, function (err, hash) {
+        console.log('current git hash: ' + hash);
+        gitHash = hash;
+        done()
+    });
 });
 
 gulp.task('clean', function() {
@@ -21,8 +25,8 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('app/css'))
 });
 
-gulp.task('gitJS', ['clean'], function() {
-   return gulp.src('app/script.js')
+gulp.task('gitJS', ['clean', 'git-hash'], function() {
+    return gulp.src('app/script.js')
        .pipe(rename('script-' + gitHash + '.js'))
        .pipe(gulp.dest('dist'))
 });
