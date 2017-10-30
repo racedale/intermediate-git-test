@@ -41,6 +41,7 @@ jobs:
          - image: circleci/node:6.11
     working_directory: ~/tmp/intermediate-git
     steps:
+      - checkout
       # Download and cache dependencies
       - restore_cache:
           keys:
