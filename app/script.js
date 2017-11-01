@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
     $('#background-button').click(function() {
+        $('body').css('background', '#126872')
     })
 });
