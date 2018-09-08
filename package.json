@@ -19,11 +19,11 @@
   "homepage": "https://github.com/racedale/intermediate-git#readme",
   "devDependencies": {
     "del": "^3.0.0",
-    "firebase-tools": "^3.13.1",
+    "firebase-tools": "^3.19.3",
     "gulp": "^3.9.1",
-    "gulp-git": "^2.4.2",
-    "gulp-inject": "^4.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
+    "gulp-git": "^2.8.0",
+    "gulp-inject": "^4.3.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^3.2.1"
   }
 }
